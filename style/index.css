@@ -189,15 +189,11 @@ a:hover {
     justify-content: space-around;
 }
 
-.bottom-content .text-container1 {
+.bottom-content .text-container {
     padding-right: 4%;
 }
 
-.bottom-content .text-container2 {
-    padding-right: 4%;
-}
-
-.bottom-content .text-container3 {
+.bottom-content .text-container:last-child {
     padding-right: 0;
 }
 
@@ -221,7 +217,27 @@ footer nav a {
 }
 
 @media(max-width: 800px) {
-    header {
+    .top-content .text-containers {
+        flex-direction: column;
+    }
+    .text-containers .text-container {
+        padding: 2% 0;
+        width: 100%;
+    }
+    .middle-content .boxes .box {
+        width: 30%;
+        height: 9rem;
+    }
+    .bottom-content {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .bottom-content .text-container {
+        width: 47%;
+        padding-bottom: 4%;
+    }
+
+    /* header {
         padding: 0;
     }
     .top-content {
@@ -245,7 +261,7 @@ footer nav a {
     }
     .text-container3 {
         width: 100%;
-    }
+    } */
 }
 
 @media (max-width: 500px) {
