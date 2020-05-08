@@ -74,14 +74,14 @@ p {
 
 header {
     display:flex;
-    align-items: baseline;
-    padding: 2rem 0;
+    align-items: baseline; /* or flex end */
+    padding: 4% 0;
 }
 
 header nav {
     display: flex;
     justify-content: space-around;
-    flex-grow: 1;
+    flex-grow: 1; /* grows nav to fill space 8 */
 }
 
 /* changes all a tags to black with a hover of red */
@@ -100,27 +100,26 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 2rem;
     border-bottom: .05rem dashed black;
 }
+
 .top-content img {
     width: 100%;
 }
 
 .top-content .text-containers {
-    padding: 2rem 0;
+    padding: 2% 0;
     display: flex;
 }
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 2%;
-    padding-bottom: 2%;  
+    padding: 0 2%; 
 }
 
 .middle-content {
-    margin-bottom: 2%;
     border-bottom: .05rem dashed black;
+    padding: 2% 0;
 }
 
 .middle-content h2 {
@@ -135,9 +134,9 @@ a:hover {
 }
 
 .box {
-    width: 6.5rem;
+    width: 12.5%;
     height: 6.5rem;
-    margin: 1.2rem 2.5%;
+    margin: 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -186,7 +185,7 @@ a:hover {
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 1rem;
+    margin: 2%;
     justify-content: space-around;
 }
 
