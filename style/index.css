@@ -65,10 +65,17 @@ p {
 
 /* css reset over */
 
+
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
 header {
     display:flex;
     align-items: baseline;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 header nav {
@@ -87,12 +94,7 @@ a:hover {
     color: red;
 }
 
-/* maint content begins here */
-
-.container {
-    width: 75%;
-    margin: 0 auto;
-}
+/* top content begins here */
 
 .top-content {
     display: flex;
@@ -102,9 +104,14 @@ a:hover {
     border-bottom: .05rem dashed black;
 }
 .top-content img {
-    padding: 1rem;
     width: 100%;
 }
+
+.top-content .text-containers {
+    padding: 2rem 0;
+    display: flex;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 2%;
